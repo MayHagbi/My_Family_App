@@ -1,9 +1,9 @@
 const e = require('express')
 const express = require('express')
+const userController = require('./controllers/userController')
 const router = e.Router()
 
-router.get('/', function(req, res) {
-    res.render('home_page')
-})
+router.get('/', userController.home)
+router.post('/register', userController.register)
 
 module.exports = router
