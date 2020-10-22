@@ -10,4 +10,4 @@ app.set('views', 'views') // let express know where to find our views
 app.set('view engine', 'ejs')
 app.use('/', router)
 
-app.listen(5000)
+module.exports = app
